@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/scripts.js"></script>
+
+    <title>Random Pokemon Generator</title>
+  </head>
+  <body>
+      <div class="text-center">
+    <h1>Get One Random Pokemon </h1>
+    <h3>Select Generation to Get Random Pokemon</h3>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen3" value="option3">
+      <label class="form-check-label" for="inlineCheckbox3">3</label>
+  </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="gen4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox4">4</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen5" value="option5">
+      <label class="form-check-label" for="inlineCheckbox5">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen6" value="option6">
+      <label class="form-check-label" for="inlineCheckbox6">6</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen7" value="option7">
+      <label class="form-check-label" for="inlineCheckbox7">7</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="gen8" value="option8">
+      <label class="form-check-label" for="inlineCheckbox8">8</label>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" onclick="randomPokemon()">Ranomize</button>
+    <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img id="pokemon-image" class="card-img-top" src="https://images.freeimages.com/images/large-previews/87d/baby-toy-for-madison-1191276.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 id="pokemon-name" class="card-title">Pokemon Name</h5>
+        <a href="#" id="pokedex-btn" class="btn btn-primary">Go Pokedex</a>
+      </div>
+    </div>
+    </div>
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <a href="https://mdbootstrap.com/"> Github.com</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
+  </body>
+</html>
