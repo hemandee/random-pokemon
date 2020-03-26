@@ -18,20 +18,19 @@ function randomPokemon(){
     let allCheckboxs = document.querySelectorAll('[id^="gen"]');
     let selectArray = [];
     allCheckboxs.forEach(function(val){
-        console.log(val)
         if($(val).is(":checked")){
-            console.log(val.id + " is checked")
             selectArray = selectArray.concat(all[val.id]);
         }
     });
 
-    console.log(selectArray);
     if(selectArray <= 0){ return;}
     let pokemonName = selectArray[Math.floor(Math.random() * selectArray.length)].trim();
     document.getElementById('pokemon-name').textContent = pokemonName;
-    let url = "https://img.pokemondb.net/artwork/large/" + pokemonName.toLowerCase() + ".jpg";
+    pokemonName = pokemonName.replace(/\s+/g, '-').toLowerCase()
+    let url = "https://img.pokemondb.net/artwork/large/" + pokemonName + ".jpg";
     document.getElementById('pokemon-image').src = url;
-    let pokedexurl = "https://pokemondb.net/pokedex/" + pokemonName.toLowerCase();
+    let pokedexurl = "https://pokemondb.net/pokedex/" + pokemonName;
     document.getElementById("pokedex-btn").href = pokedexurl;
+    document.getElementById("pokemon-placeholder").style.display = "none";
 
 };

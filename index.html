@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="js/scripts.js"></script>
 
     <title>Random Pokemon Generator</title>
@@ -48,10 +49,12 @@
       <input class="form-check-input" type="checkbox" id="gen8" value="option8">
       <label class="form-check-label" for="inlineCheckbox8">8</label>
     </div>
-    <button type="button" class="btn btn-primary btn-sm" onclick="randomPokemon()">Ranomize</button>
+    <button type="button" class="btn btn-primary btn-sm" onclick="randomPokemon()">Randomize</button>
     <div class="col d-flex justify-content-center">
     <div class="card" style="width: 18rem;">
-      <img id="pokemon-image" class="card-img-top" src="https://images.freeimages.com/images/large-previews/87d/baby-toy-for-madison-1191276.jpg" alt="Card image cap">
+      <img id="pokemon-image" class="card-img-top" src="" alt="Who's that Pokemon?">
+      <i id="pokemon-placeholder" class="fa fa-question-circle fa-5x" aria-hidden="true"></i>
+
       <div class="card-body">
         <h5 id="pokemon-name" class="card-title">Pokemon Name</h5>
         <a href="#" id="pokedex-btn" class="btn btn-primary">Go Pokedex</a>
@@ -62,7 +65,7 @@
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
-        <a href="https://mdbootstrap.com/"> Github.com</a>
+        <a href="https://github.com/hemandee/random-pokemon"> Github.com</a>
       </div>
       <!-- Copyright -->
     
